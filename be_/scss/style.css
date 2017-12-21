@@ -1,0 +1,158 @@
+a {
+  text-decoration: none; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none; }
+
+header {
+  background: #039be5;
+  display: flex;
+  height: 115px;
+  order: 1;
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid darkblue; }
+
+.brand {
+  flex-basis: 50%; }
+  .brand .logo a.logo-link img {
+    height: 100px;
+    padding-top: 10px;
+    padding-left: 20px; }
+
+.nav {
+  flex-basis: 50%; }
+  .nav ul.nav-list {
+    display: flex;
+    justify-content: flex-end; }
+    .nav ul.nav-list li.list-item {
+      display: inline;
+      padding-top: 50px; }
+      .nav ul.nav-list li.list-item a.item-link {
+        padding: 40px;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1.2rem; }
+        .nav ul.nav-list li.list-item a.item-link:hover {
+          padding-top: 50px;
+          padding-bottom: 42px;
+          padding-left: 40px;
+          padding-right: 40px;
+          border-bottom: 3px solid rgba(255, 255, 255, 0.56);
+          animation: item-link 0.2s linear 0.2s forwards; }
+
+@keyframes item-link {
+  0% { }
+  100% {
+    background-color: rgba(255, 255, 255, 0.56);
+    color: #026b9c; } }
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.justify-center {
+  justify-content: center; }
+
+.justify-start {
+  justify-content: flex-start; }
+
+.justify-flex-end {
+  justify-content: flex-end; }
+
+main {
+  background: #039be5;
+  display: flex;
+  height: 450px;
+  order: 2;
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3); }
+
+.left-content,
+.right-content {
+  flex-basis: 45%;
+  padding-top: 130px; }
+
+.left-content legend,
+.right-content legend {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 10px; }
+
+.left-content input, select,
+.right-content input, select {
+  background: #fff;
+  font-size: 0.9rem;
+  padding-left: 10px;
+  border: none;
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+  height: 45px; }
+
+.middle-content {
+  flex-basis: 10%;
+  padding-top: 158px; }
+  .middle-content button {
+    padding: 10px 45px;
+    background-color: #fff;
+    color: #039be5;
+    -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3); }
+    .middle-content button:active {
+      margin-top: 1px;
+      outline: none; }
+    .middle-content button:hover {
+      background-color: #f2f2f2; }
+    .middle-content button i {
+      font-size: 2rem; }

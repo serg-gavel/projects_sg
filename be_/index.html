@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Template</title>
+    <!--link(href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb", crossorigin="anonymous")-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/style.css">
+  </head>
+  <body>
+    <!--beginning body-->
+    <div class="main-wrapper">
+      <!--beginning header-->
+      <header>
+        <div class="brand">
+          <div class="logo"><a class="logo-link" href="#"><img src="img/white-dblue.png" alt="logo"></a></div>
+        </div>
+        <div class="nav">
+          <nav>
+            <ul class="nav-list">
+              <li class="list-item"><a class="item-link" href="#">Exchange</a></li>
+              <li class="list-item"><a class="item-link" href="#">Graph</a></li>
+              <li class="list-item"><a class="item-link" href="#">Donate</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!--header ending-->
+      <!--beginning content-->
+      <main>
+        <div class="left-content">
+          <div class="row justify-center">
+            <form>
+              <legend>Enter your coin value :&nbsp;<i class="fa fa-btc" aria-hidden="true"></i></legend>
+              <input type="text" value="Enter your value.." name="coinInput">
+              <select name="coinSelect">
+                <option value="BTC">Bitcoin (BTC)</option>
+                <option value="BCH">Bitcoin Cash (BCH)</option>
+                <option value="BTG">Bitcoin Gold (BTG)</option>
+                <option value="ETH">Ethereum (ETH)</option>
+                <option value="XMR">Monero (XMR)</option>
+                <option value="AEON">Aeon (AEON)</option>
+                <option value="XRP">Ripple (XRP)</option>
+                <option value="LTC">Litecoin (LTC)</option>
+                <option value="MIOTA">IOTA (MIOTA)</option>
+                <option value="ADA">Cardano (ADA)</option>
+                <option value="DASH">Dash (DASH)</option>
+                <option value="EOS">EOS (EOS)</option>
+                <option value="NEO">NEO (NEO)</option>
+                <option value="QTUM">Qtum (QTUM)</option>
+                <option value="XLM">Stellar (XLM)</option>
+                <option value="ETC">Ethereum Classic (ETC)</option>
+                <option value="TRX">TRON (TRX)</option>
+                <option value="XEM">NEM (XEM)</option>
+              </select>
+            </form>
+          </div>
+        </div>
+        <div class="middle-content">
+          <div class="row justify-center">
+            <button type="button"><i class="fa fa-exchange" aria-hidden="true"></i></button>
+          </div>
+        </div>
+        <div class="right-content">
+          <div class="row justify-center">
+            <form>
+              <legend>Enter your money value :&nbsp;<i class="fa fa-usd" aria-hidden="true"></i></legend>
+              <input type="text" value="Enter your value.." name="moneyInput">
+              <select name="moneySelect">
+                <option value="USD">U.S. Dollar (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="UAH">Hryvnia (UAH)</option>
+                <option value="RUB">Ruble (RUB)</option>
+              </select>
+            </form>
+          </div>
+        </div>
+      </main>
+      <!--content ending-->
+      <!--beginning footer-->
+      <footer></footer>
+      <!--footer ending-->
+    </div>
+    <!--js libraries-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous")-->
+    <!--script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous")-->
+    <!--js components area-->
+    <!--primary js scripts-->
+    <script src="js/basic.js"></script>
+  </body>
+</html>

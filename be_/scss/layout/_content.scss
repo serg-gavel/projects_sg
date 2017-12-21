@@ -1,0 +1,80 @@
+//main classes
+.container{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  //margin-right: -15px;
+  //margin-left: -15px;
+}
+.justify-center{
+  justify-content: center;
+}
+.justify-start{
+  justify-content: flex-start;
+}
+.justify-flex-end{
+  justify-content: flex-end;
+}
+//_____________________________________________________//
+
+
+main{
+  //background: $dark-white;
+  background: $header-background;
+  //margin-top: 35px;
+  display: flex;
+  height: 450px;
+  order: 2;
+  //flex-wrap: wrap;
+  @include shadow;
+}
+.left-content,
+.right-content{
+  flex-basis: 45%;
+  //background: $header-background;
+  padding-top: 130px;
+}
+.left-content legend,
+.right-content legend{
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.left-content input, select,
+.right-content input, select{
+  background: #fff;
+  font-size: 0.9rem;
+  padding-left: 10px;
+  border: none;
+  @include shadow;
+  height: 45px;
+}
+.middle-content{
+  flex-basis: 10%;
+  //background: $header-background;
+  padding-top: 158px;
+  button{
+    padding: 10px 45px;
+    background-color: #fff;
+    color: $header-background;
+    @include shadow;
+    &:active{
+      margin-top: 1px;
+      outline: none;
+    }
+    &:hover{
+      background-color: darken(#fff, 5%);
+    }
+    i{
+      font-size: 2rem;
+    }
+  }
+}
